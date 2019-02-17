@@ -1,0 +1,14 @@
+C:\Data\AngularTest\AngularTest\obj\Debug\netcoreapp2.1\AngularTest.csprojAssemblyReference.cache
+C:\Data\AngularTest\AngularTest\obj\Debug\netcoreapp2.1\AngularTest.csproj.CoreCompileInputs.cache
+C:\Data\AngularTest\AngularTest\obj\Debug\netcoreapp2.1\AngularTest.RazorAssemblyInfo.cache
+C:\Data\AngularTest\AngularTest\obj\Debug\netcoreapp2.1\AngularTest.RazorAssemblyInfo.cs
+C:\Data\AngularTest\AngularTest\obj\Debug\netcoreapp2.1\AngularTest.AssemblyInfoInputs.cache
+C:\Data\AngularTest\AngularTest\obj\Debug\netcoreapp2.1\AngularTest.AssemblyInfo.cs
+C:\Data\AngularTest\AngularTest\bin\Debug\netcoreapp2.1\AngularTest.deps.json
+C:\Data\AngularTest\AngularTest\bin\Debug\netcoreapp2.1\AngularTest.runtimeconfig.json
+C:\Data\AngularTest\AngularTest\bin\Debug\netcoreapp2.1\AngularTest.runtimeconfig.dev.json
+C:\Data\AngularTest\AngularTest\bin\Debug\netcoreapp2.1\AngularTest.dll
+C:\Data\AngularTest\AngularTest\bin\Debug\netcoreapp2.1\AngularTest.pdb
+C:\Data\AngularTest\AngularTest\obj\Debug\netcoreapp2.1\AngularTest.RazorTargetAssemblyInfo.cache
+C:\Data\AngularTest\AngularTest\obj\Debug\netcoreapp2.1\AngularTest.dll
+C:\Data\AngularTest\AngularTest\obj\Debug\netcoreapp2.1\AngularTest.pdb
