@@ -6,6 +6,22 @@ export class AppPage {
   }
 
   getTitleText() {
-    return element(by.css('app-root h1')).getText() as Promise<string>;
+    return element(by.css('app-root h2')).getText() as Promise<string>;
+  }
+
+  getLiCount(type) {
+    return element.all(by.css('ul>li>'+type+'>a')).count() as Promise<number>;    
+  }
+
+  getCatCount() {
+    return element.all(by.css('#catlist>span')).count() as Promise<number>;    
+  }
+
+  getFirstCatName() {
+    return element.all(by.css('#catlist>span')).first().getText() as Promise<string>;
+  }
+
+  getLastCatName() {
+    return element.all(by.css('#catlist>span')).last().getText() as Promise<string>;
   }
 }
