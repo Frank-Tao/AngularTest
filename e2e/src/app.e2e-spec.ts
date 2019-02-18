@@ -1,5 +1,5 @@
 import { AppPage } from './app.po';
-import { browser, logging } from 'protractor';
+import { browser, logging, by, element } from 'protractor';
 
 describe('workspace-project App', () => {
   let page: AppPage;
@@ -23,12 +23,15 @@ describe('workspace-project App', () => {
   });
 
   it('should have 2 cats in the list', () => {
-    expect(page.getCatCount()).toEqual(2);
+    //expect(page.getCatCount()).toEqual(2);
+    var catList = element.all(by.id('catlist')).all(by.css('span'));
+    expect(catList.count()).toEqual(2);
+    expect(catList.get(1).getText()).toEqual('Lucy- 6'); //2nd one , leave the wrong information to see the error
   });
 
   it('check cat information in the list', () => { 
-    expect(page.getFirstCatName()).toEqual("Lilly- 12"); //leave the wrong information to see the error
-    expect(page.getLastCatName()).toEqual("Lucy- 6");
+    expect(page.getFirstCatName()).toEqual("Lilly - 12"); 
+    expect(page.getLastCatName()).toEqual("Lucy - 6");
   });
 
   afterEach(async () => {
