@@ -1,5 +1,6 @@
 import { AppPage } from './app.po';
 import { browser, logging, by, element } from 'protractor';
+import * as fs from "fs";
 
 describe('workspace-project App', () => {
   let page: AppPage;
@@ -26,7 +27,7 @@ describe('workspace-project App', () => {
     //expect(page.getCatCount()).toEqual(2);
     var catList = element.all(by.id('catlist')).all(by.css('span'));
     expect(catList.count()).toEqual(2);
-    expect(catList.get(1).getText()).toEqual('Lucy- 6'); //2nd one , leave the wrong information to see the error
+    expect(catList.get(1).getText()).toEqual('Lucy - 6'); //2nd one , leave the wrong information to see the error
   });
 
   it('check cat information in the list', () => { 
@@ -40,5 +41,10 @@ describe('workspace-project App', () => {
     expect(logs).not.toContain(jasmine.objectContaining({
       level: logging.Level.SEVERE,
     }));
+    browser.takeScreenshot().then(function(png) {  //take screen shot
+      var stream = fs.createWriteStream("/temp/screenshot.png");
+      stream.write(new Buffer(png, 'base64'));
+      stream.end();
+    });
   });
 });
